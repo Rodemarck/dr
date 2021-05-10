@@ -1,4 +1,5 @@
 ﻿using System;
+using codigo.ui.fala;
 using UnityEngine;
 using UnityEngine.EventSystems;
 
@@ -12,38 +13,20 @@ namespace codigo
 
         private void Update()
         {
-            if (Input.GetMouseButtonDown(0) && !EventSystem.current.IsPointerOverGameObject())
+            if (Input.GetMouseButtonDown(0))
             {
-                raio = Camera.main.ScreenPointToRay(Input.mousePosition);
-                if (Physics.Raycast(raio, out hit,20))
+                if(SistemaFala.Instancia.estaFalando)
+                    Mundo.Instancia.Click();
+                else if (!EventSystem.current.IsPointerOverGameObject())
                 {
-                    //hit.collider.gameObject;
-                    Debug.Log("ACHEI VOCE!!!");
-                }
-                else
-                {
-                    Debug.Log("porra!!!");
+                    raio = Camera.main.ScreenPointToRay(Input.mousePosition);
+                    if (Physics.Raycast(raio, out hit))
+                    {
+                        Mundo.Instancia.Click(hit);
+                    }
                 }
             }
-        }
-
-        private Vector3 AnguloMouse()
-        {
-            float angX, angY;
-            if (Input.mousePosition.x == Dados.width)
-                angX = 45;
-            else if (Input.mousePosition.x == -Dados.width)
-                angX = -45;
-            else
-                angX = ((Input.mousePosition.x - Dados.width) / Dados.width);
             
-            if (Input.mousePosition.y == Dados.height)
-                angY = 45;
-            else if (Input.mousePosition.y == -Dados.height)
-                angY = -45;
-            else
-                angY = ((Input.mousePosition.y - Dados.height) / Dados.height);
-            return new Vector3(-angX, 0,angY);
         }
     }
 }
