@@ -1,13 +1,16 @@
 using System;
+using System.Collections.Generic;
 using System.IO;
-using UnityEngine;
 
 namespace codigo.ui.fala
 {
+    [Serializable]
     public class Fala
     {
         public string nome;
         public string texto;
+        public Sprite[] sprites;
+        
 
         public Fala(string nome, string texto)
         {
@@ -15,21 +18,31 @@ namespace codigo.ui.fala
             this.texto = texto;
         }
 
+        public Fala(IReadOnlyList<string> args)
+        {
+            nome = args[0];
+            texto = args[1];
+            if (args.Count != 3) return;
+            
+            var partes = args[2].Split(new [] {";;"}, StringSplitOptions.None);
+            sprites = new Sprite[partes.Length];
+            for (var i = 0; i < sprites.Length; i++)
+                sprites[i] = Sprite.Cria(partes[i]);
+        }
         public static Fala[] ApartirDeArquivo(string caminho) 
         {
             try
             {
-                using (var leitor = new StreamReader("Assets/falas/" + caminho + ".txt"))
+                using (var leitor = new StreamReader("Assets/recursos/falas/" + caminho + ".txt"))
                 {
                     var texto = leitor.ReadToEnd();
-                    var falasBrutas = texto.Split(new char[] { '\n' });
-                    var separador = new string[] { "::" };
+                    var falasBrutas = texto.Split( '\n');
+                    var separador = new [] { "::" };
                     var falas = new Fala[falasBrutas.Length];
                     var n = 0;
                     foreach (var falaBruta in falasBrutas)
                     {
-                        var partes = falaBruta.Split(separador, StringSplitOptions.None);
-                        falas[n++] = new Fala(partes[0], partes[1]);
+                        falas[n++] = new Fala(falaBruta.Split(separador, StringSplitOptions.None));
                     }
                     return falas;
                 }

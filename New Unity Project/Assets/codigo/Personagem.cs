@@ -1,4 +1,5 @@
 ﻿using System;
+using codigo.ui;
 using codigo.ui.fala;
 using UnityEngine;
 
@@ -35,7 +36,7 @@ namespace codigo
         private void Update()
         {
             tempo += Time.deltaTime;
-            if(!SistemaFala.Instancia.estaFalando)
+            if(!SistemaFala.Instancia.estaFalando && Mundo.Instancia.mover)
                 Andar();
         }
 
@@ -43,7 +44,7 @@ namespace codigo
         {
             transform.Translate(Input.GetAxis("Horizontal") * Time.deltaTime * velocidade, 0,Input.GetAxis("Vertical") * Time.deltaTime * velocidade);
             aux = Input.GetAxis("Rotacionar");
-            if (aux != 0 && tempo > tempoRotacao)
+            if (aux != 0 && Mundo.Instancia.girar && tempo > tempoRotacao)
             {
                 tempo = 0f;
                 transform.Rotate(0,aux * 90,0);
