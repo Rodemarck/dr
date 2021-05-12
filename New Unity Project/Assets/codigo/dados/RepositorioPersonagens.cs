@@ -1,6 +1,8 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using System.IO;
 using UnityEngine;
+using Sprite = codigo.ui.Sprite;
 
 namespace codigo.dados
 {
@@ -18,20 +20,19 @@ namespace codigo.dados
         #endregion
         #region Campos
 
-        private Dictionary<string, string> tabela;
-        
-        public static void caminho(string nome, out string arg)
+        private Dictionary<string, Sprite> tabela;
+        public static void get(string nome, out Sprite arg)
         {
             Instancia.tabela.TryGetValue(nome,out arg);
         }
-
+        
         #endregion
         #region Construtor
 
         public RepositorioPersonagens()
         {
-            tabela = new Dictionary<string,string>();
-            tabela.Add("","");
+            tabela = new Dictionary<string,Sprite>();
+            
         }
 
         #endregion

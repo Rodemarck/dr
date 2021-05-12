@@ -107,8 +107,6 @@ namespace codigo.ui
             
         }
 
-        #endregion
-
         public void Click()
         {
             Debug.Log("pos [" + pos + "] len[" + falas.Length + "]");
@@ -127,5 +125,8 @@ namespace codigo.ui
                 painel.SetActive(false);
             }
         }
+
+        #endregion
+        
     }
 }
