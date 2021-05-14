@@ -33,7 +33,9 @@ namespace codigo.ui
         public Text texto;
 
         public Text nome;
+        public Text descricao;
         public GameObject painel;
+        
 
         private Fala[] falas;
         private Dialogo di;
@@ -66,6 +68,7 @@ namespace codigo.ui
         private void Start()
         {
             MouseNormal();
+            descricao.enabled = false;
             falas = new Fala[0];
         }
 
