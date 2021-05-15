@@ -1,5 +1,7 @@
 ﻿using System;
+using codigo.ui.botao;
 using codigo.ui.fala;
+using codigo.ui.menu;
 using UnityEngine;
 using UnityEngine.Serialization;
 using UnityEngine.UI;
@@ -9,6 +11,8 @@ namespace codigo.ui
     
     [Serializable]
     [RequireComponent(typeof(SistemaFala))]
+    [RequireComponent(typeof(MonoMenu))]
+    [RequireComponent(typeof(BotaoMenu))]
     public class Mundo : MonoBehaviour
     {
         #region Singleton
@@ -27,15 +31,27 @@ namespace codigo.ui
         }
         #endregion
         #region Campos
+
+        #region Paineis
+
+        [Header("Sistema de fala")] 
+        public GameObject camadaPersonagens;
+        public bool permitePersonagem = true;
+        public GameObject camadaMenu;
+        public bool permiteMenu = true;
+        public GameObject camadaFala;
+        public bool pemiteFala = true;
+        
+        #endregion
         #region Fala
 
         [Header("Sistema de fala")]
+        [Space(20)]
         public Text texto;
 
         public Text nome;
         public Text descricao;
-        public GameObject painel;
-        
+
 
         private Fala[] falas;
         private Dialogo di;
@@ -43,7 +59,6 @@ namespace codigo.ui
         #endregion
         #region Cursor
         
-        [FormerlySerializedAs("mouseNormal")]
         [Header("Cursor do mouse")]
         [Space(20)]
         public Texture2D cursorNormal;
@@ -125,11 +140,12 @@ namespace codigo.ui
                 falas = new Fala[0];
                 pos = 0;
                 SistemaFala.Instancia.pareDeFalar();
-                painel.SetActive(false);
+                camadaFala.SetActive(false);
             }
         }
 
         #endregion
+        
         
     }
 }

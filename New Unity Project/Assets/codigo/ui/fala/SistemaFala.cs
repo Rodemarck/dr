@@ -45,8 +45,8 @@ namespace codigo.ui.fala
         }    
         public bool estaVisival
         {
-            get => Mundo.Instancia.painel.active; 
-            set => Mundo.Instancia.painel.SetActive(value); 
+            get => Mundo.Instancia.camadaFala.active; 
+            set => Mundo.Instancia.camadaFala.SetActive(value); 
         }
         public bool estaFalando { get => acao != null; }
        
@@ -70,7 +70,7 @@ namespace codigo.ui.fala
         }
         IEnumerator Falando(Fala fala)
         {
-            Mundo.Instancia.painel.SetActive(true);
+            Mundo.Instancia.camadaFala.SetActive(true);
             Mundo.Instancia.nome.text = fala.nome;
             Mundo.Instancia.texto.text = "";
             n1 = 0;
