@@ -8,6 +8,7 @@ using UnityEngine.UI;
 namespace codigo.ui.fala
 {
     [System.Serializable]
+    [DisallowMultipleComponent]
     public class SistemaFala : MonoBehaviour
     {
         #region singleton

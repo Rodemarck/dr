@@ -13,6 +13,7 @@ namespace codigo.ui
     [RequireComponent(typeof(SistemaFala))]
     [RequireComponent(typeof(MonoMenu))]
     [RequireComponent(typeof(BotaoMenu))]
+    [DisallowMultipleComponent]
     public class Mundo : MonoBehaviour
     {
         #region Singleton
@@ -32,19 +33,26 @@ namespace codigo.ui
         #endregion
         #region Campos
 
-        #region Paineis
-
-        [Header("Sistema de fala")] 
+        #region Camadas
+        [Header("Camadas")] 
         public GameObject camadaPersonagens;
-        public bool permitePersonagem = true;
+        [HideInInspector] public bool permitePersonagem = true;
         public GameObject camadaMenu;
-        public bool permiteMenu = true;
+        [HideInInspector] public bool permiteMenu = true;
         public GameObject camadaFala;
-        public bool pemiteFala = true;
+        [HideInInspector] public bool pemiteFala = true;
+        #endregion
+        #region Menus
+        
+        [HideInInspector] public GameObject menuMono;
+        [HideInInspector] public GameObject menuMapa;
+        [HideInInspector] public GameObject menuBala;
+        [HideInInspector] public GameObject menuPresente;
+        [HideInInspector] public GameObject menuRegra;
+        [HideInInspector] public GameObject menuConfiguracao;
         
         #endregion
         #region Fala
-
         [Header("Sistema de fala")]
         [Space(20)]
         public Text texto;
@@ -83,8 +91,17 @@ namespace codigo.ui
         private void Start()
         {
             MouseNormal();
-            descricao.enabled = false;
             falas = new Fala[0];
+            descricao.enabled = false;
+            camadaFala.SetActive(false);
+            camadaPersonagens.SetActive(false);
+            for(var i = 0; i < camadaMenu.transform.childCount ;i++)
+                camadaMenu.transform.GetChild(i).gameObject.SetActive(false);
+            menuMono = camadaMenu.transform.GetChild(0).gameObject;
+            menuMapa = camadaMenu.transform.GetChild(1).gameObject;
+            menuPresente = camadaMenu.transform.GetChild(2).gameObject;
+            menuRegra = camadaMenu.transform.GetChild(3).gameObject;
+            menuConfiguracao = camadaMenu.transform.GetChild(4).gameObject;
         }
 
         public void MouseNormal()

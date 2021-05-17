@@ -1,0 +1,981 @@
+Using pre-set license
+Built from '2020.3/staging' branch; Version is '2020.3.5f1 (8095aa901b9b) revision 8426922'; Using compiler version '192528614'; Build Type 'Release'
+OS: 'Windows 10 Home Single Language; OS build 18363.1556; Version 1909; 64bit' Language: 'pt' Physical Memory: 8064 MB
+BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 0
+
+ COMMAND LINE ARGUMENTS:
+C:\Program Files\Unity\Hub\Editor\2020.3.5f1\Editor\Unity.exe
+-adb2
+-batchMode
+-noUpm
+-name
+AssetImportWorker2
+-projectPath
+C:/Users/Rodemarck/Documents/GitHub/dr/New Unity Project
+-logFile
+Logs/AssetImportWorker2.log
+-srvPort
+52189
+Successfully changed project path to: C:/Users/Rodemarck/Documents/GitHub/dr/New Unity Project
+C:/Users/Rodemarck/Documents/GitHub/dr/New Unity Project
+Using Asset Import Pipeline V2.
+Refreshing native plugins compatible for Editor in 35.83 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Initialize engine version: 2020.3.5f1 (8095aa901b9b)
+[Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2020.3.5f1/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path C:/Users/Rodemarck/Documents/GitHub/dr/New Unity Project/Assets
+GfxDevice: creating device client; threaded=0
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.1]
+    Renderer: Intel(R) UHD Graphics 620 (ID=0x3ea0)
+    Vendor:   
+    VRAM:     4032 MB
+    Driver:   26.20.100.7463
+Initialize mono
+Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2020.3.5f1/Editor/Data/Managed'
+Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2020.3.5f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit'
+Mono config path = 'C:/Program Files/Unity/Hub/Editor/2020.3.5f1/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56592
+Begin MonoManager ReloadAssembly
+Registering precompiled unity dll's ...
+Register platform support module: C:/Program Files/Unity/Hub/Editor/2020.3.5f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Registered in 0.002702 seconds.
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 26.58 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.169 seconds
+Platform modules already initialized, skipping
+Registering precompiled user dll's ...
+Registered in 0.000586 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file data-00000240F19AC450 doesn't match image C:\Users\Rodemarck\Documents\GitHub\dr\New Unity Project\Library\ScriptAssemblies\Unity.VSCode.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-00000240F173CE40 doesn't match image C:\Users\Rodemarck\Documents\GitHub\dr\New Unity Project\Library\ScriptAssemblies\Unity.TextMeshPro.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-00000240F1F02010 doesn't match image C:\Users\Rodemarck\Documents\GitHub\dr\New Unity Project\Library\ScriptAssemblies\Unity.VisualStudio.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-00000240F463D040 doesn't match image C:\Users\Rodemarck\Documents\GitHub\dr\New Unity Project\Library\ScriptAssemblies\UnityEngine.TestRunner.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-00000240F43FF020 doesn't match image C:\Users\Rodemarck\Documents\GitHub\dr\New Unity Project\Library\ScriptAssemblies\Unity.Timeline.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-00000240F1E9B010 doesn't match image C:\Users\Rodemarck\Documents\GitHub\dr\New Unity Project\Library\ScriptAssemblies\Unity.Timeline.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-00000240F4E22010 doesn't match image C:\Users\Rodemarck\Documents\GitHub\dr\New Unity Project\Library\ScriptAssemblies\Unity.TextMeshPro.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-00000240F463D040 doesn't match image C:\Users\Rodemarck\Documents\GitHub\dr\New Unity Project\Library\ScriptAssemblies\Unity.CollabProxy.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-00000240F442CA30 doesn't match image C:\Users\Rodemarck\Documents\GitHub\dr\New Unity Project\Library\ScriptAssemblies\UnityEditor.TestRunner.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-00000240F1F02010 doesn't match image C:\Users\Rodemarck\Documents\GitHub\dr\New Unity Project\Library\ScriptAssemblies\UnityEditor.UI.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-00000240F478CC30 doesn't match image C:\Users\Rodemarck\Documents\GitHub\dr\New Unity Project\Library\ScriptAssemblies\Unity.Rider.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-00000240F1570010 doesn't match image C:\Users\Rodemarck\Documents\GitHub\dr\New Unity Project\Library\ScriptAssemblies\UnityEngine.UI.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.25 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  2.671 seconds
+Platform modules already initialized, skipping
+========================================================================
+Worker process is ready to serve import requests
+Launched and connected shader compiler UnityShaderCompiler.exe after 1.32 seconds
+Refreshing native plugins compatible for Editor in 0.22 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1126 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 70.1 MB.
+System memory in use after: 70.1 MB.
+
+Unloading 10 unused Assets to reduce memory usage. Loaded Objects now: 1587.
+Total: 2.438000 ms (FindLiveObjects: 0.294600 ms CreateObjectMapping: 0.077200 ms MarkObjects: 1.947200 ms  DeleteObjects: 0.118200 ms)
+
+========================================================================
+Received Import Request.
+  path: Assets/codigo/New Flare.flare
+  artifactKey: Guid(ec5be835773fb0f4c85167e247935758) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/codigo/New Flare.flare using Guid(ec5be835773fb0f4c85167e247935758) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '33b45265922f15af17116d2d95434fa3') in 0.231120 seconds
+  Import took 0.233575 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.000572 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file data-00000240F1F48040 doesn't match image C:\Users\Rodemarck\Documents\GitHub\dr\New Unity Project\Library\ScriptAssemblies\Unity.VSCode.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-00000240F4E8E010 doesn't match image C:\Users\Rodemarck\Documents\GitHub\dr\New Unity Project\Library\ScriptAssemblies\Unity.TextMeshPro.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-00000240F1E3C020 doesn't match image C:\Users\Rodemarck\Documents\GitHub\dr\New Unity Project\Library\ScriptAssemblies\Unity.VisualStudio.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-00000240F1E3C020 doesn't match image C:\Users\Rodemarck\Documents\GitHub\dr\New Unity Project\Library\ScriptAssemblies\UnityEngine.TestRunner.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-00000240F3ECC020 doesn't match image C:\Users\Rodemarck\Documents\GitHub\dr\New Unity Project\Library\ScriptAssemblies\Unity.Timeline.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-00000240F1E3C020 doesn't match image C:\Users\Rodemarck\Documents\GitHub\dr\New Unity Project\Library\ScriptAssemblies\Unity.Timeline.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-00000240F1ACE020 doesn't match image C:\Users\Rodemarck\Documents\GitHub\dr\New Unity Project\Library\ScriptAssemblies\Unity.TextMeshPro.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-00000240F1E3C020 doesn't match image C:\Users\Rodemarck\Documents\GitHub\dr\New Unity Project\Library\ScriptAssemblies\Unity.CollabProxy.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-00000240F1F09440 doesn't match image C:\Users\Rodemarck\Documents\GitHub\dr\New Unity Project\Library\ScriptAssemblies\UnityEditor.TestRunner.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-00000240F4E96020 doesn't match image C:\Users\Rodemarck\Documents\GitHub\dr\New Unity Project\Library\ScriptAssemblies\UnityEditor.UI.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-00000240F4E96020 doesn't match image C:\Users\Rodemarck\Documents\GitHub\dr\New Unity Project\Library\ScriptAssemblies\Unity.Rider.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-00000240F494C010 doesn't match image C:\Users\Rodemarck\Documents\GitHub\dr\New Unity Project\Library\ScriptAssemblies\UnityEngine.UI.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.21 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.747 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.24 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1121 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 70.0 MB.
+System memory in use after: 70.1 MB.
+
+Unloading 5 unused Assets to reduce memory usage. Loaded Objects now: 1590.
+Total: 1.790800 ms (FindLiveObjects: 0.216400 ms CreateObjectMapping: 0.031400 ms MarkObjects: 1.474600 ms  DeleteObjects: 0.066900 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.000803 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file data-00000240F1DAC940 doesn't match image C:\Users\Rodemarck\Documents\GitHub\dr\New Unity Project\Library\ScriptAssemblies\Unity.VSCode.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-00000240F4E8E010 doesn't match image C:\Users\Rodemarck\Documents\GitHub\dr\New Unity Project\Library\ScriptAssemblies\Unity.TextMeshPro.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-00000240F5ED1010 doesn't match image C:\Users\Rodemarck\Documents\GitHub\dr\New Unity Project\Library\ScriptAssemblies\Unity.VisualStudio.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-00000240F4FBA010 doesn't match image C:\Users\Rodemarck\Documents\GitHub\dr\New Unity Project\Library\ScriptAssemblies\UnityEngine.TestRunner.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-00000240F4606030 doesn't match image C:\Users\Rodemarck\Documents\GitHub\dr\New Unity Project\Library\ScriptAssemblies\Unity.Timeline.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-00000240F22F4030 doesn't match image C:\Users\Rodemarck\Documents\GitHub\dr\New Unity Project\Library\ScriptAssemblies\Unity.Timeline.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-00000240F4E22010 doesn't match image C:\Users\Rodemarck\Documents\GitHub\dr\New Unity Project\Library\ScriptAssemblies\Unity.TextMeshPro.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-00000240F4FBA010 doesn't match image C:\Users\Rodemarck\Documents\GitHub\dr\New Unity Project\Library\ScriptAssemblies\Unity.CollabProxy.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-00000240F17D3010 doesn't match image C:\Users\Rodemarck\Documents\GitHub\dr\New Unity Project\Library\ScriptAssemblies\UnityEditor.TestRunner.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-00000240F57A4040 doesn't match image C:\Users\Rodemarck\Documents\GitHub\dr\New Unity Project\Library\ScriptAssemblies\UnityEditor.UI.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-00000240F1F02010 doesn't match image C:\Users\Rodemarck\Documents\GitHub\dr\New Unity Project\Library\ScriptAssemblies\Unity.Rider.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-00000240F5C0FBA0 doesn't match image C:\Users\Rodemarck\Documents\GitHub\dr\New Unity Project\Library\ScriptAssemblies\UnityEngine.UI.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.22 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.778 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.20 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1121 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 70.1 MB.
+System memory in use after: 70.1 MB.
+
+Unloading 5 unused Assets to reduce memory usage. Loaded Objects now: 1593.
+Total: 2.003400 ms (FindLiveObjects: 0.225800 ms CreateObjectMapping: 0.089000 ms MarkObjects: 1.612500 ms  DeleteObjects: 0.074000 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.000767 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file data-00000240F1DAC940 doesn't match image C:\Users\Rodemarck\Documents\GitHub\dr\New Unity Project\Library\ScriptAssemblies\Unity.VSCode.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-00000240F5350010 doesn't match image C:\Users\Rodemarck\Documents\GitHub\dr\New Unity Project\Library\ScriptAssemblies\Unity.TextMeshPro.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-00000240F5ED1010 doesn't match image C:\Users\Rodemarck\Documents\GitHub\dr\New Unity Project\Library\ScriptAssemblies\Unity.VisualStudio.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-00000240F5EEAB80 doesn't match image C:\Users\Rodemarck\Documents\GitHub\dr\New Unity Project\Library\ScriptAssemblies\UnityEngine.TestRunner.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-00000240F3DD0020 doesn't match image C:\Users\Rodemarck\Documents\GitHub\dr\New Unity Project\Library\ScriptAssemblies\Unity.Timeline.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-00000240F5350010 doesn't match image C:\Users\Rodemarck\Documents\GitHub\dr\New Unity Project\Library\ScriptAssemblies\Unity.Timeline.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-00000240F5388020 doesn't match image C:\Users\Rodemarck\Documents\GitHub\dr\New Unity Project\Library\ScriptAssemblies\Unity.TextMeshPro.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-00000240F20729F0 doesn't match image C:\Users\Rodemarck\Documents\GitHub\dr\New Unity Project\Library\ScriptAssemblies\Unity.CollabProxy.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-00000240F196B080 doesn't match image C:\Users\Rodemarck\Documents\GitHub\dr\New Unity Project\Library\ScriptAssemblies\UnityEditor.TestRunner.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-00000240F49DD010 doesn't match image C:\Users\Rodemarck\Documents\GitHub\dr\New Unity Project\Library\ScriptAssemblies\UnityEditor.UI.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-00000240F428D050 doesn't match image C:\Users\Rodemarck\Documents\GitHub\dr\New Unity Project\Library\ScriptAssemblies\Unity.Rider.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-00000240F5626020 doesn't match image C:\Users\Rodemarck\Documents\GitHub\dr\New Unity Project\Library\ScriptAssemblies\UnityEngine.UI.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.20 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.935 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.26 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1121 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 70.1 MB.
+System memory in use after: 70.1 MB.
+
+Unloading 5 unused Assets to reduce memory usage. Loaded Objects now: 1596.
+Total: 2.747800 ms (FindLiveObjects: 0.204900 ms CreateObjectMapping: 0.038000 ms MarkObjects: 2.399400 ms  DeleteObjects: 0.103700 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.000648 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file data-00000240F1DAC940 doesn't match image C:\Users\Rodemarck\Documents\GitHub\dr\New Unity Project\Library\ScriptAssemblies\Unity.VSCode.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-00000240F5350010 doesn't match image C:\Users\Rodemarck\Documents\GitHub\dr\New Unity Project\Library\ScriptAssemblies\Unity.TextMeshPro.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-00000240F3EB4030 doesn't match image C:\Users\Rodemarck\Documents\GitHub\dr\New Unity Project\Library\ScriptAssemblies\Unity.VisualStudio.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-00000240F439F010 doesn't match image C:\Users\Rodemarck\Documents\GitHub\dr\New Unity Project\Library\ScriptAssemblies\UnityEngine.TestRunner.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-00000240F2314020 doesn't match image C:\Users\Rodemarck\Documents\GitHub\dr\New Unity Project\Library\ScriptAssemblies\Unity.Timeline.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-00000240F5350010 doesn't match image C:\Users\Rodemarck\Documents\GitHub\dr\New Unity Project\Library\ScriptAssemblies\Unity.Timeline.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-00000240F5F13AB0 doesn't match image C:\Users\Rodemarck\Documents\GitHub\dr\New Unity Project\Library\ScriptAssemblies\Unity.TextMeshPro.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-00000240F439F010 doesn't match image C:\Users\Rodemarck\Documents\GitHub\dr\New Unity Project\Library\ScriptAssemblies\Unity.CollabProxy.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-00000240F5B81C40 doesn't match image C:\Users\Rodemarck\Documents\GitHub\dr\New Unity Project\Library\ScriptAssemblies\UnityEditor.TestRunner.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-00000240F61BB010 doesn't match image C:\Users\Rodemarck\Documents\GitHub\dr\New Unity Project\Library\ScriptAssemblies\UnityEditor.UI.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-00000240F428D050 doesn't match image C:\Users\Rodemarck\Documents\GitHub\dr\New Unity Project\Library\ScriptAssemblies\Unity.Rider.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-00000240F5118190 doesn't match image C:\Users\Rodemarck\Documents\GitHub\dr\New Unity Project\Library\ScriptAssemblies\UnityEngine.UI.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.21 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.790 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.21 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1121 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 70.1 MB.
+System memory in use after: 70.1 MB.
+
+Unloading 5 unused Assets to reduce memory usage. Loaded Objects now: 1599.
+Total: 1.769400 ms (FindLiveObjects: 0.206700 ms CreateObjectMapping: 0.036200 ms MarkObjects: 1.454400 ms  DeleteObjects: 0.070300 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.000855 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file data-00000240F1DAC940 doesn't match image C:\Users\Rodemarck\Documents\GitHub\dr\New Unity Project\Library\ScriptAssemblies\Unity.VSCode.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-00000240F4626070 doesn't match image C:\Users\Rodemarck\Documents\GitHub\dr\New Unity Project\Library\ScriptAssemblies\Unity.TextMeshPro.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-00000240F61BB010 doesn't match image C:\Users\Rodemarck\Documents\GitHub\dr\New Unity Project\Library\ScriptAssemblies\Unity.VisualStudio.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-00000240F3F01E90 doesn't match image C:\Users\Rodemarck\Documents\GitHub\dr\New Unity Project\Library\ScriptAssemblies\UnityEngine.TestRunner.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-00000240F4131010 doesn't match image C:\Users\Rodemarck\Documents\GitHub\dr\New Unity Project\Library\ScriptAssemblies\Unity.Timeline.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-00000240F1E3C020 doesn't match image C:\Users\Rodemarck\Documents\GitHub\dr\New Unity Project\Library\ScriptAssemblies\Unity.Timeline.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-00000240F1ACE020 doesn't match image C:\Users\Rodemarck\Documents\GitHub\dr\New Unity Project\Library\ScriptAssemblies\Unity.TextMeshPro.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-00000240F1991010 doesn't match image C:\Users\Rodemarck\Documents\GitHub\dr\New Unity Project\Library\ScriptAssemblies\Unity.CollabProxy.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-00000240F17D2EC0 doesn't match image C:\Users\Rodemarck\Documents\GitHub\dr\New Unity Project\Library\ScriptAssemblies\UnityEditor.TestRunner.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-00000240F61BB010 doesn't match image C:\Users\Rodemarck\Documents\GitHub\dr\New Unity Project\Library\ScriptAssemblies\UnityEditor.UI.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-00000240F3DAC050 doesn't match image C:\Users\Rodemarck\Documents\GitHub\dr\New Unity Project\Library\ScriptAssemblies\Unity.Rider.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-00000240F2208010 doesn't match image C:\Users\Rodemarck\Documents\GitHub\dr\New Unity Project\Library\ScriptAssemblies\UnityEngine.UI.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.22 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.787 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.20 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1121 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 70.1 MB.
+System memory in use after: 70.2 MB.
+
+Unloading 5 unused Assets to reduce memory usage. Loaded Objects now: 1602.
+Total: 2.450200 ms (FindLiveObjects: 0.223400 ms CreateObjectMapping: 0.049700 ms MarkObjects: 2.109100 ms  DeleteObjects: 0.066700 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.000728 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file data-00000240F1DAC940 doesn't match image C:\Users\Rodemarck\Documents\GitHub\dr\New Unity Project\Library\ScriptAssemblies\Unity.VSCode.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-00000240F4626070 doesn't match image C:\Users\Rodemarck\Documents\GitHub\dr\New Unity Project\Library\ScriptAssemblies\Unity.TextMeshPro.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-00000240F3EB4030 doesn't match image C:\Users\Rodemarck\Documents\GitHub\dr\New Unity Project\Library\ScriptAssemblies\Unity.VisualStudio.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-00000240F1E3C020 doesn't match image C:\Users\Rodemarck\Documents\GitHub\dr\New Unity Project\Library\ScriptAssemblies\UnityEngine.TestRunner.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-00000240F2314020 doesn't match image C:\Users\Rodemarck\Documents\GitHub\dr\New Unity Project\Library\ScriptAssemblies\Unity.Timeline.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-00000240F4431020 doesn't match image C:\Users\Rodemarck\Documents\GitHub\dr\New Unity Project\Library\ScriptAssemblies\Unity.Timeline.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-00000240F1ACE020 doesn't match image C:\Users\Rodemarck\Documents\GitHub\dr\New Unity Project\Library\ScriptAssemblies\Unity.TextMeshPro.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-00000240F1E3C020 doesn't match image C:\Users\Rodemarck\Documents\GitHub\dr\New Unity Project\Library\ScriptAssemblies\Unity.CollabProxy.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-00000240F5F40960 doesn't match image C:\Users\Rodemarck\Documents\GitHub\dr\New Unity Project\Library\ScriptAssemblies\UnityEditor.TestRunner.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-00000240F1F02010 doesn't match image C:\Users\Rodemarck\Documents\GitHub\dr\New Unity Project\Library\ScriptAssemblies\UnityEditor.UI.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-00000240F3DAC050 doesn't match image C:\Users\Rodemarck\Documents\GitHub\dr\New Unity Project\Library\ScriptAssemblies\Unity.Rider.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-00000240F1A095A0 doesn't match image C:\Users\Rodemarck\Documents\GitHub\dr\New Unity Project\Library\ScriptAssemblies\UnityEngine.UI.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.20 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.752 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.21 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1121 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 70.1 MB.
+System memory in use after: 70.2 MB.
+
+Unloading 5 unused Assets to reduce memory usage. Loaded Objects now: 1605.
+Total: 2.412500 ms (FindLiveObjects: 0.253300 ms CreateObjectMapping: 0.072700 ms MarkObjects: 2.019100 ms  DeleteObjects: 0.063800 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.000611 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file data-00000240F1DAC940 doesn't match image C:\Users\Rodemarck\Documents\GitHub\dr\New Unity Project\Library\ScriptAssemblies\Unity.VSCode.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-00000240F4626070 doesn't match image C:\Users\Rodemarck\Documents\GitHub\dr\New Unity Project\Library\ScriptAssemblies\Unity.TextMeshPro.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-00000240F641D080 doesn't match image C:\Users\Rodemarck\Documents\GitHub\dr\New Unity Project\Library\ScriptAssemblies\Unity.VisualStudio.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-00000240F3F01DB0 doesn't match image C:\Users\Rodemarck\Documents\GitHub\dr\New Unity Project\Library\ScriptAssemblies\UnityEngine.TestRunner.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-00000240F4453020 doesn't match image C:\Users\Rodemarck\Documents\GitHub\dr\New Unity Project\Library\ScriptAssemblies\Unity.Timeline.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-00000240F2070020 doesn't match image C:\Users\Rodemarck\Documents\GitHub\dr\New Unity Project\Library\ScriptAssemblies\Unity.Timeline.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-00000240F1ACE020 doesn't match image C:\Users\Rodemarck\Documents\GitHub\dr\New Unity Project\Library\ScriptAssemblies\Unity.TextMeshPro.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-00000240F1F8D010 doesn't match image C:\Users\Rodemarck\Documents\GitHub\dr\New Unity Project\Library\ScriptAssemblies\Unity.CollabProxy.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-00000240F2001020 doesn't match image C:\Users\Rodemarck\Documents\GitHub\dr\New Unity Project\Library\ScriptAssemblies\UnityEditor.TestRunner.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-00000240F683E010 doesn't match image C:\Users\Rodemarck\Documents\GitHub\dr\New Unity Project\Library\ScriptAssemblies\UnityEditor.UI.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-00000240F50F2030 doesn't match image C:\Users\Rodemarck\Documents\GitHub\dr\New Unity Project\Library\ScriptAssemblies\Unity.Rider.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-00000240F202C010 doesn't match image C:\Users\Rodemarck\Documents\GitHub\dr\New Unity Project\Library\ScriptAssemblies\UnityEngine.UI.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.26 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.939 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.30 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1121 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 70.1 MB.
+System memory in use after: 70.2 MB.
+
+Unloading 5 unused Assets to reduce memory usage. Loaded Objects now: 1608.
+Total: 1.704000 ms (FindLiveObjects: 0.190300 ms CreateObjectMapping: 0.057000 ms MarkObjects: 1.398100 ms  DeleteObjects: 0.057400 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.000573 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file data-00000240F1DAC940 doesn't match image C:\Users\Rodemarck\Documents\GitHub\dr\New Unity Project\Library\ScriptAssemblies\Unity.VSCode.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-00000240F4626070 doesn't match image C:\Users\Rodemarck\Documents\GitHub\dr\New Unity Project\Library\ScriptAssemblies\Unity.TextMeshPro.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-00000240F1B35040 doesn't match image C:\Users\Rodemarck\Documents\GitHub\dr\New Unity Project\Library\ScriptAssemblies\Unity.VisualStudio.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-00000240F5C000E0 doesn't match image C:\Users\Rodemarck\Documents\GitHub\dr\New Unity Project\Library\ScriptAssemblies\UnityEngine.TestRunner.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-00000240F5F91260 doesn't match image C:\Users\Rodemarck\Documents\GitHub\dr\New Unity Project\Library\ScriptAssemblies\Unity.Timeline.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-00000240F426F020 doesn't match image C:\Users\Rodemarck\Documents\GitHub\dr\New Unity Project\Library\ScriptAssemblies\Unity.Timeline.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-00000240F5388020 doesn't match image C:\Users\Rodemarck\Documents\GitHub\dr\New Unity Project\Library\ScriptAssemblies\Unity.TextMeshPro.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-00000240F5C000E0 doesn't match image C:\Users\Rodemarck\Documents\GitHub\dr\New Unity Project\Library\ScriptAssemblies\Unity.CollabProxy.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-00000240F5F40960 doesn't match image C:\Users\Rodemarck\Documents\GitHub\dr\New Unity Project\Library\ScriptAssemblies\UnityEditor.TestRunner.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-00000240F1F02010 doesn't match image C:\Users\Rodemarck\Documents\GitHub\dr\New Unity Project\Library\ScriptAssemblies\UnityEditor.UI.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-00000240F3EB4030 doesn't match image C:\Users\Rodemarck\Documents\GitHub\dr\New Unity Project\Library\ScriptAssemblies\Unity.Rider.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-00000240F4587910 doesn't match image C:\Users\Rodemarck\Documents\GitHub\dr\New Unity Project\Library\ScriptAssemblies\UnityEngine.UI.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.22 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.725 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.22 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1121 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 70.1 MB.
+System memory in use after: 70.2 MB.
+
+Unloading 5 unused Assets to reduce memory usage. Loaded Objects now: 1611.
+Total: 2.366900 ms (FindLiveObjects: 0.195500 ms CreateObjectMapping: 0.058300 ms MarkObjects: 2.047800 ms  DeleteObjects: 0.064300 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.000643 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file data-00000240F2079E50 doesn't match image C:\Users\Rodemarck\Documents\GitHub\dr\New Unity Project\Library\ScriptAssemblies\Unity.VSCode.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-00000240F4626070 doesn't match image C:\Users\Rodemarck\Documents\GitHub\dr\New Unity Project\Library\ScriptAssemblies\Unity.TextMeshPro.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-00000240F641D080 doesn't match image C:\Users\Rodemarck\Documents\GitHub\dr\New Unity Project\Library\ScriptAssemblies\Unity.VisualStudio.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-00000240F1991010 doesn't match image C:\Users\Rodemarck\Documents\GitHub\dr\New Unity Project\Library\ScriptAssemblies\UnityEngine.TestRunner.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-00000240F4453020 doesn't match image C:\Users\Rodemarck\Documents\GitHub\dr\New Unity Project\Library\ScriptAssemblies\Unity.Timeline.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-00000240F3F00030 doesn't match image C:\Users\Rodemarck\Documents\GitHub\dr\New Unity Project\Library\ScriptAssemblies\Unity.Timeline.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-00000240F1ACE020 doesn't match image C:\Users\Rodemarck\Documents\GitHub\dr\New Unity Project\Library\ScriptAssemblies\Unity.TextMeshPro.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-00000240F1991010 doesn't match image C:\Users\Rodemarck\Documents\GitHub\dr\New Unity Project\Library\ScriptAssemblies\Unity.CollabProxy.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-00000240F5F40960 doesn't match image C:\Users\Rodemarck\Documents\GitHub\dr\New Unity Project\Library\ScriptAssemblies\UnityEditor.TestRunner.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-00000240F42EF020 doesn't match image C:\Users\Rodemarck\Documents\GitHub\dr\New Unity Project\Library\ScriptAssemblies\UnityEditor.UI.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-00000240F1B35040 doesn't match image C:\Users\Rodemarck\Documents\GitHub\dr\New Unity Project\Library\ScriptAssemblies\Unity.Rider.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-00000240F1697310 doesn't match image C:\Users\Rodemarck\Documents\GitHub\dr\New Unity Project\Library\ScriptAssemblies\UnityEngine.UI.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.22 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.855 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.28 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1121 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 70.1 MB.
+System memory in use after: 70.2 MB.
+
+Unloading 5 unused Assets to reduce memory usage. Loaded Objects now: 1614.
+Total: 3.428000 ms (FindLiveObjects: 0.271500 ms CreateObjectMapping: 0.072500 ms MarkObjects: 2.986000 ms  DeleteObjects: 0.097000 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.000682 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file data-00000240F5C27BC0 doesn't match image C:\Users\Rodemarck\Documents\GitHub\dr\New Unity Project\Library\ScriptAssemblies\Unity.VSCode.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-00000240F4626070 doesn't match image C:\Users\Rodemarck\Documents\GitHub\dr\New Unity Project\Library\ScriptAssemblies\Unity.TextMeshPro.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-00000240F69B2010 doesn't match image C:\Users\Rodemarck\Documents\GitHub\dr\New Unity Project\Library\ScriptAssemblies\Unity.VisualStudio.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-00000240F5C000E0 doesn't match image C:\Users\Rodemarck\Documents\GitHub\dr\New Unity Project\Library\ScriptAssemblies\UnityEngine.TestRunner.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-00000240F5F91260 doesn't match image C:\Users\Rodemarck\Documents\GitHub\dr\New Unity Project\Library\ScriptAssemblies\Unity.Timeline.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-00000240F4626070 doesn't match image C:\Users\Rodemarck\Documents\GitHub\dr\New Unity Project\Library\ScriptAssemblies\Unity.Timeline.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-00000240F4411010 doesn't match image C:\Users\Rodemarck\Documents\GitHub\dr\New Unity Project\Library\ScriptAssemblies\Unity.TextMeshPro.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-00000240F5C000E0 doesn't match image C:\Users\Rodemarck\Documents\GitHub\dr\New Unity Project\Library\ScriptAssemblies\Unity.CollabProxy.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-00000240F5F40960 doesn't match image C:\Users\Rodemarck\Documents\GitHub\dr\New Unity Project\Library\ScriptAssemblies\UnityEditor.TestRunner.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-00000240F42EF020 doesn't match image C:\Users\Rodemarck\Documents\GitHub\dr\New Unity Project\Library\ScriptAssemblies\UnityEditor.UI.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-00000240F3EB4030 doesn't match image C:\Users\Rodemarck\Documents\GitHub\dr\New Unity Project\Library\ScriptAssemblies\Unity.Rider.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-00000240F540E020 doesn't match image C:\Users\Rodemarck\Documents\GitHub\dr\New Unity Project\Library\ScriptAssemblies\UnityEngine.UI.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.21 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.899 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.26 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1121 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 70.1 MB.
+System memory in use after: 70.2 MB.
+
+Unloading 5 unused Assets to reduce memory usage. Loaded Objects now: 1617.
+Total: 2.291200 ms (FindLiveObjects: 0.209400 ms CreateObjectMapping: 0.073700 ms MarkObjects: 1.935300 ms  DeleteObjects: 0.071800 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.000620 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file data-00000240F1DAC940 doesn't match image C:\Users\Rodemarck\Documents\GitHub\dr\New Unity Project\Library\ScriptAssemblies\Unity.VSCode.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-00000240F530E030 doesn't match image C:\Users\Rodemarck\Documents\GitHub\dr\New Unity Project\Library\ScriptAssemblies\Unity.TextMeshPro.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-00000240F58E8020 doesn't match image C:\Users\Rodemarck\Documents\GitHub\dr\New Unity Project\Library\ScriptAssemblies\Unity.VisualStudio.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-00000240F5C000E0 doesn't match image C:\Users\Rodemarck\Documents\GitHub\dr\New Unity Project\Library\ScriptAssemblies\UnityEngine.TestRunner.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-00000240F4453020 doesn't match image C:\Users\Rodemarck\Documents\GitHub\dr\New Unity Project\Library\ScriptAssemblies\Unity.Timeline.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-00000240F530E030 doesn't match image C:\Users\Rodemarck\Documents\GitHub\dr\New Unity Project\Library\ScriptAssemblies\Unity.Timeline.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-00000240F4411010 doesn't match image C:\Users\Rodemarck\Documents\GitHub\dr\New Unity Project\Library\ScriptAssemblies\Unity.TextMeshPro.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-00000240F5C000E0 doesn't match image C:\Users\Rodemarck\Documents\GitHub\dr\New Unity Project\Library\ScriptAssemblies\Unity.CollabProxy.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-00000240F5F40960 doesn't match image C:\Users\Rodemarck\Documents\GitHub\dr\New Unity Project\Library\ScriptAssemblies\UnityEditor.TestRunner.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-00000240F3CC8020 doesn't match image C:\Users\Rodemarck\Documents\GitHub\dr\New Unity Project\Library\ScriptAssemblies\UnityEditor.UI.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-00000240F53B4180 doesn't match image C:\Users\Rodemarck\Documents\GitHub\dr\New Unity Project\Library\ScriptAssemblies\Unity.Rider.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-00000240F5388020 doesn't match image C:\Users\Rodemarck\Documents\GitHub\dr\New Unity Project\Library\ScriptAssemblies\UnityEngine.UI.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.23 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.823 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.24 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1121 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 70.1 MB.
+System memory in use after: 70.2 MB.
+
+Unloading 5 unused Assets to reduce memory usage. Loaded Objects now: 1620.
+Total: 1.933900 ms (FindLiveObjects: 0.221800 ms CreateObjectMapping: 0.052900 ms MarkObjects: 1.585400 ms  DeleteObjects: 0.072800 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.001079 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file data-00000240F1DAC940 doesn't match image C:\Users\Rodemarck\Documents\GitHub\dr\New Unity Project\Library\ScriptAssemblies\Unity.VSCode.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-00000240F4626070 doesn't match image C:\Users\Rodemarck\Documents\GitHub\dr\New Unity Project\Library\ScriptAssemblies\Unity.TextMeshPro.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-00000240F641D080 doesn't match image C:\Users\Rodemarck\Documents\GitHub\dr\New Unity Project\Library\ScriptAssemblies\Unity.VisualStudio.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-00000240F68EEF60 doesn't match image C:\Users\Rodemarck\Documents\GitHub\dr\New Unity Project\Library\ScriptAssemblies\UnityEngine.TestRunner.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-00000240F4453020 doesn't match image C:\Users\Rodemarck\Documents\GitHub\dr\New Unity Project\Library\ScriptAssemblies\Unity.Timeline.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-00000240F3F00030 doesn't match image C:\Users\Rodemarck\Documents\GitHub\dr\New Unity Project\Library\ScriptAssemblies\Unity.Timeline.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-00000240F6A2B010 doesn't match image C:\Users\Rodemarck\Documents\GitHub\dr\New Unity Project\Library\ScriptAssemblies\Unity.TextMeshPro.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-00000240F68EEF60 doesn't match image C:\Users\Rodemarck\Documents\GitHub\dr\New Unity Project\Library\ScriptAssemblies\Unity.CollabProxy.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-00000240F40CB020 doesn't match image C:\Users\Rodemarck\Documents\GitHub\dr\New Unity Project\Library\ScriptAssemblies\UnityEditor.TestRunner.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-00000240F3E5E060 doesn't match image C:\Users\Rodemarck\Documents\GitHub\dr\New Unity Project\Library\ScriptAssemblies\UnityEditor.UI.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-00000240F53B4180 doesn't match image C:\Users\Rodemarck\Documents\GitHub\dr\New Unity Project\Library\ScriptAssemblies\Unity.Rider.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-00000240F5388020 doesn't match image C:\Users\Rodemarck\Documents\GitHub\dr\New Unity Project\Library\ScriptAssemblies\UnityEngine.UI.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.22 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.707 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.21 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1121 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 70.1 MB.
+System memory in use after: 70.2 MB.
+
+Unloading 5 unused Assets to reduce memory usage. Loaded Objects now: 1623.
+Total: 1.785200 ms (FindLiveObjects: 0.113300 ms CreateObjectMapping: 0.028600 ms MarkObjects: 1.583400 ms  DeleteObjects: 0.059300 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.000920 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file data-00000240F1DAC940 doesn't match image C:\Users\Rodemarck\Documents\GitHub\dr\New Unity Project\Library\ScriptAssemblies\Unity.VSCode.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-00000240F4626070 doesn't match image C:\Users\Rodemarck\Documents\GitHub\dr\New Unity Project\Library\ScriptAssemblies\Unity.TextMeshPro.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-00000240F53B4180 doesn't match image C:\Users\Rodemarck\Documents\GitHub\dr\New Unity Project\Library\ScriptAssemblies\Unity.VisualStudio.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-00000240F5C000E0 doesn't match image C:\Users\Rodemarck\Documents\GitHub\dr\New Unity Project\Library\ScriptAssemblies\UnityEngine.TestRunner.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-00000240F5F91260 doesn't match image C:\Users\Rodemarck\Documents\GitHub\dr\New Unity Project\Library\ScriptAssemblies\Unity.Timeline.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-00000240F1E3C020 doesn't match image C:\Users\Rodemarck\Documents\GitHub\dr\New Unity Project\Library\ScriptAssemblies\Unity.Timeline.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-00000240F6A2B010 doesn't match image C:\Users\Rodemarck\Documents\GitHub\dr\New Unity Project\Library\ScriptAssemblies\Unity.TextMeshPro.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-00000240F5C000E0 doesn't match image C:\Users\Rodemarck\Documents\GitHub\dr\New Unity Project\Library\ScriptAssemblies\Unity.CollabProxy.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-00000240F5F40960 doesn't match image C:\Users\Rodemarck\Documents\GitHub\dr\New Unity Project\Library\ScriptAssemblies\UnityEditor.TestRunner.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-00000240F3E5E060 doesn't match image C:\Users\Rodemarck\Documents\GitHub\dr\New Unity Project\Library\ScriptAssemblies\UnityEditor.UI.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-00000240F2396030 doesn't match image C:\Users\Rodemarck\Documents\GitHub\dr\New Unity Project\Library\ScriptAssemblies\Unity.Rider.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-00000240F19E0720 doesn't match image C:\Users\Rodemarck\Documents\GitHub\dr\New Unity Project\Library\ScriptAssemblies\UnityEngine.UI.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.29 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.741 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.23 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1121 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 70.1 MB.
+System memory in use after: 70.2 MB.
+
+Unloading 5 unused Assets to reduce memory usage. Loaded Objects now: 1626.
+Total: 2.349600 ms (FindLiveObjects: 0.177000 ms CreateObjectMapping: 0.046400 ms MarkObjects: 2.060800 ms  DeleteObjects: 0.064300 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.000602 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file data-00000240F49FB090 doesn't match image C:\Users\Rodemarck\Documents\GitHub\dr\New Unity Project\Library\ScriptAssemblies\Unity.VSCode.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-00000240F4626070 doesn't match image C:\Users\Rodemarck\Documents\GitHub\dr\New Unity Project\Library\ScriptAssemblies\Unity.TextMeshPro.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-00000240F53B4180 doesn't match image C:\Users\Rodemarck\Documents\GitHub\dr\New Unity Project\Library\ScriptAssemblies\Unity.VisualStudio.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-00000240F5C000E0 doesn't match image C:\Users\Rodemarck\Documents\GitHub\dr\New Unity Project\Library\ScriptAssemblies\UnityEngine.TestRunner.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-00000240F6BC3050 doesn't match image C:\Users\Rodemarck\Documents\GitHub\dr\New Unity Project\Library\ScriptAssemblies\Unity.Timeline.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-00000240F2070020 doesn't match image C:\Users\Rodemarck\Documents\GitHub\dr\New Unity Project\Library\ScriptAssemblies\Unity.Timeline.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-00000240F4411010 doesn't match image C:\Users\Rodemarck\Documents\GitHub\dr\New Unity Project\Library\ScriptAssemblies\Unity.TextMeshPro.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-00000240F5C000E0 doesn't match image C:\Users\Rodemarck\Documents\GitHub\dr\New Unity Project\Library\ScriptAssemblies\Unity.CollabProxy.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-00000240F5F40960 doesn't match image C:\Users\Rodemarck\Documents\GitHub\dr\New Unity Project\Library\ScriptAssemblies\UnityEditor.TestRunner.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-00000240F61BB010 doesn't match image C:\Users\Rodemarck\Documents\GitHub\dr\New Unity Project\Library\ScriptAssemblies\UnityEditor.UI.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-00000240F2396030 doesn't match image C:\Users\Rodemarck\Documents\GitHub\dr\New Unity Project\Library\ScriptAssemblies\Unity.Rider.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-00000240F5F13AB0 doesn't match image C:\Users\Rodemarck\Documents\GitHub\dr\New Unity Project\Library\ScriptAssemblies\UnityEngine.UI.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.22 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.709 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.22 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1121 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 70.1 MB.
+System memory in use after: 70.2 MB.
+
+Unloading 5 unused Assets to reduce memory usage. Loaded Objects now: 1629.
+Total: 2.498100 ms (FindLiveObjects: 0.183800 ms CreateObjectMapping: 0.061300 ms MarkObjects: 2.189000 ms  DeleteObjects: 0.063100 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.000562 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file data-00000240F1DAC940 doesn't match image C:\Users\Rodemarck\Documents\GitHub\dr\New Unity Project\Library\ScriptAssemblies\Unity.VSCode.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-00000240F4626070 doesn't match image C:\Users\Rodemarck\Documents\GitHub\dr\New Unity Project\Library\ScriptAssemblies\Unity.TextMeshPro.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-00000240F5BC1500 doesn't match image C:\Users\Rodemarck\Documents\GitHub\dr\New Unity Project\Library\ScriptAssemblies\Unity.VisualStudio.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-00000240F68EEF60 doesn't match image C:\Users\Rodemarck\Documents\GitHub\dr\New Unity Project\Library\ScriptAssemblies\UnityEngine.TestRunner.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-00000240F5F91260 doesn't match image C:\Users\Rodemarck\Documents\GitHub\dr\New Unity Project\Library\ScriptAssemblies\Unity.Timeline.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-00000240F3E56050 doesn't match image C:\Users\Rodemarck\Documents\GitHub\dr\New Unity Project\Library\ScriptAssemblies\Unity.Timeline.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-00000240F6BE3090 doesn't match image C:\Users\Rodemarck\Documents\GitHub\dr\New Unity Project\Library\ScriptAssemblies\Unity.TextMeshPro.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-00000240F68EEF60 doesn't match image C:\Users\Rodemarck\Documents\GitHub\dr\New Unity Project\Library\ScriptAssemblies\Unity.CollabProxy.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-00000240F5F40960 doesn't match image C:\Users\Rodemarck\Documents\GitHub\dr\New Unity Project\Library\ScriptAssemblies\UnityEditor.TestRunner.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-00000240F61BB010 doesn't match image C:\Users\Rodemarck\Documents\GitHub\dr\New Unity Project\Library\ScriptAssemblies\UnityEditor.UI.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-00000240F2396030 doesn't match image C:\Users\Rodemarck\Documents\GitHub\dr\New Unity Project\Library\ScriptAssemblies\Unity.Rider.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-00000240F6896F20 doesn't match image C:\Users\Rodemarck\Documents\GitHub\dr\New Unity Project\Library\ScriptAssemblies\UnityEngine.UI.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.24 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.722 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.61 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1121 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 70.1 MB.
+System memory in use after: 70.2 MB.
+
+Unloading 5 unused Assets to reduce memory usage. Loaded Objects now: 1632.
+Total: 1.830500 ms (FindLiveObjects: 0.248700 ms CreateObjectMapping: 0.048600 ms MarkObjects: 1.475700 ms  DeleteObjects: 0.056400 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.000876 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file data-00000240F1692880 doesn't match image C:\Users\Rodemarck\Documents\GitHub\dr\New Unity Project\Library\ScriptAssemblies\Unity.VSCode.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-00000240F4626070 doesn't match image C:\Users\Rodemarck\Documents\GitHub\dr\New Unity Project\Library\ScriptAssemblies\Unity.TextMeshPro.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-00000240F5BC1500 doesn't match image C:\Users\Rodemarck\Documents\GitHub\dr\New Unity Project\Library\ScriptAssemblies\Unity.VisualStudio.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-00000240F3E56050 doesn't match image C:\Users\Rodemarck\Documents\GitHub\dr\New Unity Project\Library\ScriptAssemblies\UnityEngine.TestRunner.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-00000240F4453020 doesn't match image C:\Users\Rodemarck\Documents\GitHub\dr\New Unity Project\Library\ScriptAssemblies\Unity.Timeline.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-00000240F4626070 doesn't match image C:\Users\Rodemarck\Documents\GitHub\dr\New Unity Project\Library\ScriptAssemblies\Unity.Timeline.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-00000240F6A2B010 doesn't match image C:\Users\Rodemarck\Documents\GitHub\dr\New Unity Project\Library\ScriptAssemblies\Unity.TextMeshPro.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-00000240F3E56050 doesn't match image C:\Users\Rodemarck\Documents\GitHub\dr\New Unity Project\Library\ScriptAssemblies\Unity.CollabProxy.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-00000240F5F40960 doesn't match image C:\Users\Rodemarck\Documents\GitHub\dr\New Unity Project\Library\ScriptAssemblies\UnityEditor.TestRunner.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-00000240F61BB010 doesn't match image C:\Users\Rodemarck\Documents\GitHub\dr\New Unity Project\Library\ScriptAssemblies\UnityEditor.UI.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-00000240F641D080 doesn't match image C:\Users\Rodemarck\Documents\GitHub\dr\New Unity Project\Library\ScriptAssemblies\Unity.Rider.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-00000240F6BF30B0 doesn't match image C:\Users\Rodemarck\Documents\GitHub\dr\New Unity Project\Library\ScriptAssemblies\UnityEngine.UI.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.26 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.779 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.21 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1121 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 70.1 MB.
+System memory in use after: 70.2 MB.
+
+Unloading 5 unused Assets to reduce memory usage. Loaded Objects now: 1635.
+Total: 2.073600 ms (FindLiveObjects: 0.184700 ms CreateObjectMapping: 0.046300 ms MarkObjects: 1.786100 ms  DeleteObjects: 0.055600 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.001043 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file data-00000240F3E62070 doesn't match image C:\Users\Rodemarck\Documents\GitHub\dr\New Unity Project\Library\ScriptAssemblies\Unity.VSCode.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-00000240F530E030 doesn't match image C:\Users\Rodemarck\Documents\GitHub\dr\New Unity Project\Library\ScriptAssemblies\Unity.TextMeshPro.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-00000240F53B4180 doesn't match image C:\Users\Rodemarck\Documents\GitHub\dr\New Unity Project\Library\ScriptAssemblies\Unity.VisualStudio.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-00000240F5C000E0 doesn't match image C:\Users\Rodemarck\Documents\GitHub\dr\New Unity Project\Library\ScriptAssemblies\UnityEngine.TestRunner.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-00000240F4453020 doesn't match image C:\Users\Rodemarck\Documents\GitHub\dr\New Unity Project\Library\ScriptAssemblies\Unity.Timeline.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-00000240F15CA030 doesn't match image C:\Users\Rodemarck\Documents\GitHub\dr\New Unity Project\Library\ScriptAssemblies\Unity.Timeline.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-00000240F6A2B010 doesn't match image C:\Users\Rodemarck\Documents\GitHub\dr\New Unity Project\Library\ScriptAssemblies\Unity.TextMeshPro.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-00000240F5C000E0 doesn't match image C:\Users\Rodemarck\Documents\GitHub\dr\New Unity Project\Library\ScriptAssemblies\Unity.CollabProxy.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-00000240F5F40960 doesn't match image C:\Users\Rodemarck\Documents\GitHub\dr\New Unity Project\Library\ScriptAssemblies\UnityEditor.TestRunner.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-00000240F22FA060 doesn't match image C:\Users\Rodemarck\Documents\GitHub\dr\New Unity Project\Library\ScriptAssemblies\UnityEditor.UI.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-00000240F641D080 doesn't match image C:\Users\Rodemarck\Documents\GitHub\dr\New Unity Project\Library\ScriptAssemblies\Unity.Rider.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-00000240F6D76010 doesn't match image C:\Users\Rodemarck\Documents\GitHub\dr\New Unity Project\Library\ScriptAssemblies\UnityEngine.UI.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.24 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.790 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.23 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1121 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 70.1 MB.
+System memory in use after: 70.2 MB.
+
+Unloading 5 unused Assets to reduce memory usage. Loaded Objects now: 1638.
+Total: 2.460400 ms (FindLiveObjects: 0.179600 ms CreateObjectMapping: 0.029800 ms MarkObjects: 2.194200 ms  DeleteObjects: 0.056000 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.000879 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file data-00000240F3E62070 doesn't match image C:\Users\Rodemarck\Documents\GitHub\dr\New Unity Project\Library\ScriptAssemblies\Unity.VSCode.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-00000240F4626070 doesn't match image C:\Users\Rodemarck\Documents\GitHub\dr\New Unity Project\Library\ScriptAssemblies\Unity.TextMeshPro.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-00000240F53B4180 doesn't match image C:\Users\Rodemarck\Documents\GitHub\dr\New Unity Project\Library\ScriptAssemblies\Unity.VisualStudio.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-00000240F68DEF70 doesn't match image C:\Users\Rodemarck\Documents\GitHub\dr\New Unity Project\Library\ScriptAssemblies\UnityEngine.TestRunner.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-00000240F4453020 doesn't match image C:\Users\Rodemarck\Documents\GitHub\dr\New Unity Project\Library\ScriptAssemblies\Unity.Timeline.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-00000240F15CA030 doesn't match image C:\Users\Rodemarck\Documents\GitHub\dr\New Unity Project\Library\ScriptAssemblies\Unity.Timeline.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-00000240F4411010 doesn't match image C:\Users\Rodemarck\Documents\GitHub\dr\New Unity Project\Library\ScriptAssemblies\Unity.TextMeshPro.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-00000240F68DEF70 doesn't match image C:\Users\Rodemarck\Documents\GitHub\dr\New Unity Project\Library\ScriptAssemblies\Unity.CollabProxy.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-00000240F5F40960 doesn't match image C:\Users\Rodemarck\Documents\GitHub\dr\New Unity Project\Library\ScriptAssemblies\UnityEditor.TestRunner.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-00000240F42EF020 doesn't match image C:\Users\Rodemarck\Documents\GitHub\dr\New Unity Project\Library\ScriptAssemblies\UnityEditor.UI.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-00000240F4387020 doesn't match image C:\Users\Rodemarck\Documents\GitHub\dr\New Unity Project\Library\ScriptAssemblies\Unity.Rider.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-00000240F683E010 doesn't match image C:\Users\Rodemarck\Documents\GitHub\dr\New Unity Project\Library\ScriptAssemblies\UnityEngine.UI.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.24 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.756 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.18 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1121 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 70.2 MB.
+System memory in use after: 70.2 MB.
+
+Unloading 5 unused Assets to reduce memory usage. Loaded Objects now: 1641.
+Total: 2.206100 ms (FindLiveObjects: 0.217300 ms CreateObjectMapping: 0.037300 ms MarkObjects: 1.879600 ms  DeleteObjects: 0.071100 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.000561 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file data-00000240F49FB090 doesn't match image C:\Users\Rodemarck\Documents\GitHub\dr\New Unity Project\Library\ScriptAssemblies\Unity.VSCode.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-00000240F4626070 doesn't match image C:\Users\Rodemarck\Documents\GitHub\dr\New Unity Project\Library\ScriptAssemblies\Unity.TextMeshPro.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-00000240F53B4180 doesn't match image C:\Users\Rodemarck\Documents\GitHub\dr\New Unity Project\Library\ScriptAssemblies\Unity.VisualStudio.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-00000240F6C1CF40 doesn't match image C:\Users\Rodemarck\Documents\GitHub\dr\New Unity Project\Library\ScriptAssemblies\UnityEngine.TestRunner.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-00000240F5F91260 doesn't match image C:\Users\Rodemarck\Documents\GitHub\dr\New Unity Project\Library\ScriptAssemblies\Unity.Timeline.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-00000240F15F4430 doesn't match image C:\Users\Rodemarck\Documents\GitHub\dr\New Unity Project\Library\ScriptAssemblies\Unity.Timeline.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-00000240F4411010 doesn't match image C:\Users\Rodemarck\Documents\GitHub\dr\New Unity Project\Library\ScriptAssemblies\Unity.TextMeshPro.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-00000240F6C1CF40 doesn't match image C:\Users\Rodemarck\Documents\GitHub\dr\New Unity Project\Library\ScriptAssemblies\Unity.CollabProxy.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-00000240F68DEF70 doesn't match image C:\Users\Rodemarck\Documents\GitHub\dr\New Unity Project\Library\ScriptAssemblies\UnityEditor.TestRunner.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-00000240F6DC6070 doesn't match image C:\Users\Rodemarck\Documents\GitHub\dr\New Unity Project\Library\ScriptAssemblies\UnityEditor.UI.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-00000240F1DD9010 doesn't match image C:\Users\Rodemarck\Documents\GitHub\dr\New Unity Project\Library\ScriptAssemblies\Unity.Rider.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000002411784F0C0 doesn't match image C:\Users\Rodemarck\Documents\GitHub\dr\New Unity Project\Library\ScriptAssemblies\UnityEngine.UI.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.20 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.720 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.19 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1121 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 70.2 MB.
+System memory in use after: 70.2 MB.
+
+Unloading 5 unused Assets to reduce memory usage. Loaded Objects now: 1644.
+Total: 1.742700 ms (FindLiveObjects: 0.121300 ms CreateObjectMapping: 0.055900 ms MarkObjects: 1.500000 ms  DeleteObjects: 0.064300 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.000657 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file data-00000240F49FB090 doesn't match image C:\Users\Rodemarck\Documents\GitHub\dr\New Unity Project\Library\ScriptAssemblies\Unity.VSCode.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-00000240F530E030 doesn't match image C:\Users\Rodemarck\Documents\GitHub\dr\New Unity Project\Library\ScriptAssemblies\Unity.TextMeshPro.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-00000240F53B4180 doesn't match image C:\Users\Rodemarck\Documents\GitHub\dr\New Unity Project\Library\ScriptAssemblies\Unity.VisualStudio.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-00000240F51A3BF0 doesn't match image C:\Users\Rodemarck\Documents\GitHub\dr\New Unity Project\Library\ScriptAssemblies\UnityEngine.TestRunner.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-00000240F4453020 doesn't match image C:\Users\Rodemarck\Documents\GitHub\dr\New Unity Project\Library\ScriptAssemblies\Unity.Timeline.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-00000240F530E030 doesn't match image C:\Users\Rodemarck\Documents\GitHub\dr\New Unity Project\Library\ScriptAssemblies\Unity.Timeline.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-00000240F4411010 doesn't match image C:\Users\Rodemarck\Documents\GitHub\dr\New Unity Project\Library\ScriptAssemblies\Unity.TextMeshPro.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-00000240F51A3BF0 doesn't match image C:\Users\Rodemarck\Documents\GitHub\dr\New Unity Project\Library\ScriptAssemblies\Unity.CollabProxy.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-00000240F68DEF70 doesn't match image C:\Users\Rodemarck\Documents\GitHub\dr\New Unity Project\Library\ScriptAssemblies\UnityEditor.TestRunner.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-00000240F6DC6070 doesn't match image C:\Users\Rodemarck\Documents\GitHub\dr\New Unity Project\Library\ScriptAssemblies\UnityEditor.UI.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-00000240F2396030 doesn't match image C:\Users\Rodemarck\Documents\GitHub\dr\New Unity Project\Library\ScriptAssemblies\Unity.Rider.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000002411784F0C0 doesn't match image C:\Users\Rodemarck\Documents\GitHub\dr\New Unity Project\Library\ScriptAssemblies\UnityEngine.UI.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.24 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.695 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.28 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1121 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 70.2 MB.
+System memory in use after: 70.2 MB.
+
+Unloading 5 unused Assets to reduce memory usage. Loaded Objects now: 1647.
+Total: 2.812300 ms (FindLiveObjects: 0.380700 ms CreateObjectMapping: 0.122200 ms MarkObjects: 2.212400 ms  DeleteObjects: 0.095500 ms)
+
+AssetImportWorkerClient::OnTransportError - code=2 error=End of file

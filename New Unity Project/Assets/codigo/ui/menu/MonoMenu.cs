@@ -6,6 +6,7 @@ using UnityEngine.UI;
 namespace codigo.ui.menu
 {
     [System.Serializable]
+    [DisallowMultipleComponent]
     public class MonoMenu : MonoBehaviour
     {
         #region Singleton
