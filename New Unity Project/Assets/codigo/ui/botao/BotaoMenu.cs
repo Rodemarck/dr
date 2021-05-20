@@ -19,6 +19,7 @@ namespace codigo.ui.botao
         public void Sair()
         {
             Debug.Log("kitando aqui!!");
+            
             Application.Quit();
         }
 
