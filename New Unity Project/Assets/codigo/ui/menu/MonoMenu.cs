@@ -42,10 +42,12 @@ namespace codigo.ui.menu
 
         private void Start()
         {
+            
             mostrando = false;
             monoBotoes = FindObjectsOfType<MonoBotao>();
             var i = 0;
             index = 0;
+            
             Mundo.Instancia.camadaMenu.SetActive(false);
             foreach (var botao in monoBotoes)
             {
@@ -54,7 +56,8 @@ namespace codigo.ui.menu
             }
 
             Ler();
-            
+
+
         }
         #endregion
 

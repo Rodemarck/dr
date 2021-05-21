@@ -1,4 +1,6 @@
 ﻿using System;
+using codigo.dados;
+using Newtonsoft.Json;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -9,6 +11,17 @@ namespace codigo.ui
     public class Sessao : MonoBehaviour
     {
         private static Sessao _sessao;
+
+        public static Sessao Instancia
+        {
+            get => _sessao;
+        }
+        #region Player
+
+        public Conta conta;
+        public string personagem;
+        #endregion
+        
         
         private void Awake()
         {
@@ -19,7 +32,15 @@ namespace codigo.ui
                 return;
             if (!(PlayerPrefs.HasKey("_id") || PlayerPrefs.HasKey("conta")))
                 SceneManager.LoadScene("cena/menu/login");
+            if (SceneManager.GetActiveScene().name != "main_menu" && !PlayerPrefs.HasKey("personagem"))
+                SceneManager.LoadScene("cena/menu/main_menu");
+        }
 
+        private void Start()
+        {
+            conta = JsonConvert.DeserializeObject<Conta>(PlayerPrefs.GetString("conta"));
+            if (PlayerPrefs.HasKey("personagem"))
+                personagem = PlayerPrefs.GetString("personagem");
         }
     }
 }

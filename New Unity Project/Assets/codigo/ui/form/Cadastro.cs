@@ -24,6 +24,7 @@ namespace codigo.ui.form
         private InputField login;
         private InputField senha;
         private InputField email;
+        private Text erro;
 
         private void Start()
         {
@@ -35,7 +36,13 @@ namespace codigo.ui.form
                     senha = form.transform.transform.GetChild(x).GetComponent<InputField>();
                 else if (form.transform.transform.GetChild(x).name == "email")
                     email = form.transform.transform.GetChild(x).GetComponent<InputField>();
+                else if(form.transform.transform.GetChild(x).name == "erro")
+                    erro =  form.transform.transform.GetChild(x).GetComponent<Text>();
+                
             }
+
+            if (erro != null)
+                erro.enabled = false;
         }
 
         public void logar()
@@ -44,13 +51,12 @@ namespace codigo.ui.form
             dict["login"] = login.text;
             dict["senha"] = senha.text;
 
-            get("http://localhost:8080/conta/login", dict, (s, r) =>
+            HTTP.get("http://localhost:8080/conta/login", dict, (s, r) =>
             {
-                if (s == HttpStatusCode.OK)
-                {
-                    PlayerPrefs.SetString("id",JsonConvert.DeserializeObject<BsonDocument>(r).GetElement("_id").Value.AsString);
-                    PlayerPrefs.SetString("conta",r);
-                }
+                if (s != HttpStatusCode.OK) return;
+                //PlayerPrefs.SetString("id",JsonConvert.DeserializeObject<BsonDocument>(r).GetElement("login").Value.AsString);
+                PlayerPrefs.SetString("conta",r);
+                SceneManager.LoadScene("cena/menu/main_menu");
             });
         }
 
@@ -73,47 +79,22 @@ namespace codigo.ui.form
             
             try
             {
-                post("http://localhost:8080/conta/cadastrar", dict, (s, r) =>
+                HTTP.post("http://localhost:8080/conta/cadastrar", dict, (s, r) =>
                 {
-                   
+                    if (s == HttpStatusCode.OK)
+                        SceneManager.LoadScene("cena/menu/login");
+                    else
+                    {
+                        erro.enabled = true;
+                        erro.text = r;
+                    }
+                        
                 });
-                Debug.Log("foi-se");
             }
             catch (Exception e)
             {
                 Debug.Log(e.Data.Keys.Count);
             }
-        }
-        public static async void get(string caminho, Dictionary<string, string> dicionario, Action<HttpStatusCode,string> acao)
-        {
-            var urlFinal = caminho + '?';
-            if (dicionario.Count > 0)
-            {
-                urlFinal = dicionario.Aggregate(urlFinal, (current, par) => current + par.Key + '=' + par.Value + '&');
-                urlFinal = urlFinal.Substring(0, urlFinal.Length - 1);
-            }
-            Debug.Log("aa");
-            using var client = new HttpClient();
-            Debug.Log("bb");
-            using var response = await client.GetAsync(urlFinal);
-            Debug.Log("cc");
-            using var content = response.Content;
-            Debug.Log("dd");
-            var data = await content.ReadAsStringAsync();
-            Debug.Log("ee");
-            acao(response.StatusCode, data);
-        }
-
-        public static async void post(string caminho, Dictionary<string, string> dicionario,Action<HttpStatusCode, string> acao)
-        {
-            var lista = dicionario.Select(key => new KeyValuePair<string, string>(key.Key, key.Value)).ToList();
-            IEnumerable<KeyValuePair<string, string>> nha = new List< KeyValuePair<string, string> >(lista);
-            HttpContent q = new FormUrlEncodedContent(nha);
-            using var client = new HttpClient();
-            using var response = await client.PostAsync(caminho, q);
-            using var content = response.Content;
-            var resposta = await content.ReadAsStringAsync();
-            acao(response.StatusCode, resposta);
         }
         
         

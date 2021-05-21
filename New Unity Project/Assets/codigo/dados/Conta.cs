@@ -1,14 +1,16 @@
-﻿using MongoDB.Bson;
+﻿using System;
+using System.Collections.Generic;
+using MongoDB.Bson;
 using UnityEngine;
 
 namespace codigo.dados
 {
     public class Conta
     {
-        private ObjectId _id;
-        private string login;
-        private string email;
-        private string senha;
+        public string login;
+        public string email;
+        public string senha;
+        public List<Personagem> personagens;
 
         public Conta(string login, string email, string senha)
         {
@@ -19,7 +21,7 @@ namespace codigo.dados
 
         public override string ToString()
         {
-            return "Conta(" + "_id=" + _id + "; login=" + login + "; email=" + email + ")";
+            return "Conta(login=" + login + "; email=" + email + "; personagens =" + personagens +")";
         }
 
         public static Conta fromJson(string str)

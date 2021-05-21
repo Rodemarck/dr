@@ -1,7 +1,9 @@
 ﻿using System;
+using codigo.dados;
 using codigo.ui.botao;
 using codigo.ui.fala;
 using codigo.ui.menu;
+using Newtonsoft.Json;
 using UnityEngine;
 using UnityEngine.Serialization;
 using UnityEngine.UI;
@@ -10,6 +12,7 @@ namespace codigo.ui
 {
     
     [Serializable]
+    [RequireComponent(typeof(Sessao))]
     [RequireComponent(typeof(SistemaFala))]
     [RequireComponent(typeof(MonoMenu))]
     [RequireComponent(typeof(BotaoMenu))]
@@ -92,16 +95,22 @@ namespace codigo.ui
         {
             MouseNormal();
             falas = new Fala[0];
-            descricao.enabled = false;
-            camadaFala.SetActive(false);
-            camadaPersonagens.SetActive(false);
-            for(var i = 0; i < camadaMenu.transform.childCount ;i++)
-                camadaMenu.transform.GetChild(i).gameObject.SetActive(false);
-            menuMono = camadaMenu.transform.GetChild(0).gameObject;
-            menuMapa = camadaMenu.transform.GetChild(1).gameObject;
-            menuPresente = camadaMenu.transform.GetChild(2).gameObject;
-            menuRegra = camadaMenu.transform.GetChild(3).gameObject;
-            menuConfiguracao = camadaMenu.transform.GetChild(4).gameObject;
+            if(descricao != null)
+                descricao.enabled = false;
+            if(camadaFala != null)
+                camadaFala.SetActive(false);
+            if(camadaPersonagens != null)
+                camadaPersonagens.SetActive(false);
+            if (camadaMenu != null)
+            {
+                for(var i = 0; i < camadaMenu.transform.childCount ;i++)
+                    camadaMenu.transform.GetChild(i).gameObject.SetActive(false);
+                menuMono = camadaMenu.transform.GetChild(0).gameObject;
+                menuMapa = camadaMenu.transform.GetChild(1).gameObject;
+                menuPresente = camadaMenu.transform.GetChild(2).gameObject;
+                menuRegra = camadaMenu.transform.GetChild(3).gameObject;
+                menuConfiguracao = camadaMenu.transform.GetChild(4).gameObject;
+            }
         }
 
         public void MouseNormal()
@@ -162,7 +171,5 @@ namespace codigo.ui
         }
 
         #endregion
-        
-        
     }
 }

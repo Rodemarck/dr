@@ -1,5 +1,5 @@
 sceneSetups:
-- path: Assets/cena/menu/login.unity
+- path: Assets/cena/menu/criar_personagem.unity
   isLoaded: 1
   isActive: 1
   isSubScene: 0
