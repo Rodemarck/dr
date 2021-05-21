@@ -46,7 +46,11 @@ namespace codigo.ui.form
 
             get("http://localhost:8080/conta/login", dict, (s, r) =>
             {
-                 // Debug.Log(/97);
+                if (s == HttpStatusCode.OK)
+                {
+                    PlayerPrefs.SetString("id",JsonConvert.DeserializeObject<BsonDocument>(r).GetElement("_id").Value.AsString);
+                    PlayerPrefs.SetString("conta",r);
+                }
             });
         }
 
