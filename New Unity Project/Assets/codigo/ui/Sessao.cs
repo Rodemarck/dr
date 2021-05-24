@@ -19,7 +19,8 @@ namespace codigo.ui
         #region Player
 
         public Conta conta;
-        public string personagem;
+        [HideInInspector
+        ]public string personagem;
         #endregion
         
         
@@ -32,8 +33,6 @@ namespace codigo.ui
                 return;
             if (!(PlayerPrefs.HasKey("_id") || PlayerPrefs.HasKey("conta")))
                 SceneManager.LoadScene("cena/menu/login");
-            if (SceneManager.GetActiveScene().name != "main_menu" && !PlayerPrefs.HasKey("personagem"))
-                SceneManager.LoadScene("cena/menu/main_menu");
         }
 
         private void Start()
@@ -41,6 +40,7 @@ namespace codigo.ui
             conta = JsonConvert.DeserializeObject<Conta>(PlayerPrefs.GetString("conta"));
             if (PlayerPrefs.HasKey("personagem"))
                 personagem = PlayerPrefs.GetString("personagem");
+            Debug.Log(conta);
         }
     }
 }

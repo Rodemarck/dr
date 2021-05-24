@@ -20,31 +20,15 @@ namespace codigo.ui.botao
         }
 
         #region MenuPrincipal
-
-        public GameObject form;
-        public GameObject mensagem;
-        public Text textoMensagem;
-
-        public void Ok()
-        {
-            form.SetActive(true);
-            mensagem.SetActive(false);
-        }
+        
         public void NovoJogo()
         {
-            if (Sessao.Instancia.conta.personagens.Count >= 3)
-            {
-                textoMensagem.text = "O limite de personagens por conta é 3";
-                form.SetActive(false);
-                mensagem.SetActive(true);
-            }
-            else
-                SceneManager.LoadScene("level_0");
+            SceneManager.LoadScene("cena/game/level2");
         }
 
-        public void Carregar()
+        public void Tutorial()
         {
-            SceneManager.LoadScene("carregar");
+            SceneManager.LoadScene("cena/game/level1");
         }
 
         public void Sair()
@@ -52,6 +36,11 @@ namespace codigo.ui.botao
             Debug.Log("kitando aqui!!");
             PlayerPrefs.DeleteAll();
             SceneManager.LoadScene("cena/menu/login");
+        }
+
+        public void Menu()
+        {
+            SceneManager.LoadScene("cena/menu/main_menu");
         }
 
         #endregion

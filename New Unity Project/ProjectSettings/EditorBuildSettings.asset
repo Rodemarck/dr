@@ -17,4 +17,16 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/cena/menu/main_menu.unity
     guid: 536bd3eeb077e0846b374e3ef9f6d5a2
+  - enabled: 1
+    path: Assets/cena/game/level0.unity
+    guid: e0c895155fd6c154ab9240d0d96e9a83
+  - enabled: 1
+    path: Assets/cena/menu/game_over.unity
+    guid: 8274af43861ed984e85f1ecfd2adb796
+  - enabled: 1
+    path: Assets/cena/game/level1.unity
+    guid: a10734a842846a84482eca69c87a3b94
+  - enabled: 1
+    path: Assets/cena/game/level2.unity
+    guid: c668d66d8e791484985d1642c9b62586
   m_configObjects: {}

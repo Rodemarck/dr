@@ -1,9 +1,13 @@
 ﻿using System;
+using System.Globalization;
+using System.Net.Mime;
 using codigo.dados;
 using codigo.ui.botao;
 using codigo.ui.fala;
 using codigo.ui.menu;
 using Newtonsoft.Json;
+using Solucao.script;
+using Solucao.script.belico;
 using UnityEngine;
 using UnityEngine.Serialization;
 using UnityEngine.UI;
@@ -13,8 +17,6 @@ namespace codigo.ui
     
     [Serializable]
     [RequireComponent(typeof(Sessao))]
-    [RequireComponent(typeof(SistemaFala))]
-    [RequireComponent(typeof(MonoMenu))]
     [RequireComponent(typeof(BotaoMenu))]
     [DisallowMultipleComponent]
     public class Mundo : MonoBehaviour
@@ -36,6 +38,9 @@ namespace codigo.ui
         #endregion
         #region Campos
 
+        public Player palyer;
+        private Arma _arma;
+        
         #region Camadas
         [Header("Camadas")] 
         public GameObject camadaPersonagens;
@@ -88,6 +93,17 @@ namespace codigo.ui
         public bool mover = true;
 
         #endregion
+        #region Labels
+        [Header("GamePlay")]
+        [Space(20)]
+        public Text horda;
+        public Text kill;
+        public Text precisao;
+        public Text hs;
+        public Text balas;
+        
+
+        #endregion
         #endregion
         #region Construtor
 
@@ -101,16 +117,19 @@ namespace codigo.ui
                 camadaFala.SetActive(false);
             if(camadaPersonagens != null)
                 camadaPersonagens.SetActive(false);
-            if (camadaMenu != null)
-            {
-                for(var i = 0; i < camadaMenu.transform.childCount ;i++)
-                    camadaMenu.transform.GetChild(i).gameObject.SetActive(false);
-                menuMono = camadaMenu.transform.GetChild(0).gameObject;
-                menuMapa = camadaMenu.transform.GetChild(1).gameObject;
-                menuPresente = camadaMenu.transform.GetChild(2).gameObject;
-                menuRegra = camadaMenu.transform.GetChild(3).gameObject;
-                menuConfiguracao = camadaMenu.transform.GetChild(4).gameObject;
-            }
+            _arma = palyer.arma.GetComponent<Arma>();
+            balasRestantes = _arma.numeroBala;
+            sliderInimigo.enabled = false;
+            
+            if (camadaMenu == null) return;
+            
+            for(var i = 0; i < camadaMenu.transform.childCount ;i++)
+                camadaMenu.transform.GetChild(i).gameObject.SetActive(false);
+            menuMono = camadaMenu.transform.GetChild(0).gameObject;
+            menuMapa = camadaMenu.transform.GetChild(1).gameObject;
+            menuPresente = camadaMenu.transform.GetChild(2).gameObject;
+            menuRegra = camadaMenu.transform.GetChild(3).gameObject;
+            menuConfiguracao = camadaMenu.transform.GetChild(4).gameObject;
         }
 
         public void MouseNormal()
@@ -171,5 +190,98 @@ namespace codigo.ui
         }
 
         #endregion
+
+        #region estatisicas
+
+        public Slider sliderInimigo;
+        public int balasRestantes;
+        public int balasDisparadas;
+        public int balasAcertadas;
+        public int balasHS;
+        public int abates;
+        
+        public void mudaHorda(int n)
+        {
+            horda.text = n.ToString();
+            Estatisticas();
+        }
+        public void Dispara()
+        {
+            ++balasDisparadas;
+            --balasRestantes;
+            Estatisticas();
+        }
+        public void DisparoAcerto()
+        {
+            ++balasAcertadas;
+            Estatisticas();
+        }
+        public void DisparoHS()
+        {
+            ++balasHS;
+            Estatisticas();
+        }
+
+        public void InimigoDano(float vidaAtual, float vidaMax)
+        {
+            sliderInimigo.enabled = true;
+            sliderInimigo.minValue = 0f;
+            sliderInimigo.maxValue = vidaMax;
+            sliderInimigo.value = vidaAtual;
+        }
+        public void Abate()
+        {
+            ++abates;
+            Estatisticas();
+        }
+        private void Estatisticas()
+        {
+            balas.text = balasRestantes.ToString(CultureInfo.InvariantCulture);
+            kill.text = abates.ToString(CultureInfo.InvariantCulture);
+            if (balasAcertadas == 0) return;
+            precisao.text = Math.Round((float) balasAcertadas*100/ balasDisparadas,2).ToString(CultureInfo.InvariantCulture) + "%";
+            if(balasHS != 0)
+                hs.text = Math.Round((float) balasHS*100 /balasDisparadas,2) .ToString(CultureInfo.InvariantCulture);
+        }
+        #endregion
+
+        public void Salva()
+        {
+            PlayerPrefs.SetInt("balasRestantes", balasRestantes);
+            PlayerPrefs.SetInt("kill",abates);
+            PlayerPrefs.SetFloat("precisao",(float)Math.Round((float) balasAcertadas*100/ balasDisparadas,2));
+            PlayerPrefs.SetFloat("hs",(float)Math.Round((float) balasHS*100 /balasDisparadas,2));
+        }
+
+        public int NumeroBalas
+        {
+            get => palyer.arma.GetComponent<Arma>().numeroBala;
+            set
+            {
+                palyer.arma.GetComponent<Arma>().numeroBala = value;
+                Estatisticas();
+            }
+        }
+
+        public float Cadencia
+        {
+            get => palyer.arma.GetComponent<Arma>().cadencia;
+            set
+            {
+                palyer.arma.GetComponent<Arma>().cadencia = value;
+                Estatisticas();
+            }
+        }
+
+        public GameObject Bala
+        {
+            get => palyer.arma.GetComponent<Arma>().bala;
+            set
+            {
+                palyer.arma.GetComponent<Arma>().bala = value;
+                Estatisticas();
+            }
+        }
+        
     }
 }

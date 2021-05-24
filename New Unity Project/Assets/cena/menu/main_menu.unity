@@ -206,7 +206,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1858737137}
+      - m_Target: {fileID: 370969639}
         m_TargetAssemblyTypeName: codigo.ui.botao.BotaoMenu, Assembly-CSharp
         m_MethodName: Sair
         m_Mode: 1
@@ -348,8 +348,10 @@ GameObject:
   - component: {fileID: 370969637}
   - component: {fileID: 370969636}
   - component: {fileID: 370969635}
+  - component: {fileID: 370969639}
+  - component: {fileID: 370969638}
   m_Layer: 0
-  m_Name: EventSystem
+  m_Name: Mundo
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -403,6 +405,31 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &370969638
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 370969634}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 00cb0027483845aaae627566380e9788, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  personagem: 
+--- !u!114 &370969639
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 370969634}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d82c0c365df44dda9a3185f4ef77f4b8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &494413636
 GameObject:
   m_ObjectHideFlags: 0
@@ -822,7 +849,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1858737137}
+      - m_Target: {fileID: 370969639}
         m_TargetAssemblyTypeName: codigo.ui.botao.BotaoMenu, Assembly-CSharp
         m_MethodName: NovoJogo
         m_Mode: 1
@@ -884,7 +911,6 @@ GameObject:
   - component: {fileID: 1858737135}
   - component: {fileID: 1858737134}
   - component: {fileID: 1858737133}
-  - component: {fileID: 1858737137}
   m_Layer: 5
   m_Name: Canvas
   m_TagString: Untagged
@@ -975,18 +1001,6 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
---- !u!114 &1858737137
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1858737132}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d82c0c365df44dda9a3185f4ef77f4b8, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &2054089840
 GameObject:
   m_ObjectHideFlags: 0
@@ -1070,9 +1084,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1858737137}
+      - m_Target: {fileID: 370969639}
         m_TargetAssemblyTypeName: codigo.ui.botao.BotaoMenu, Assembly-CSharp
-        m_MethodName: Carregar
+        m_MethodName: Tutorial
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
