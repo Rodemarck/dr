@@ -26,9 +26,14 @@ namespace codigo.ui.botao
             SceneManager.LoadScene("cena/game/level2");
         }
 
+        public void Despausar()
+        {
+            Mundo.Instancia.Pausar = false;
+        }
+        
         public void Tutorial()
         {
-            SceneManager.LoadScene("cena/game/level1");
+            SceneManager.LoadScene("cena/game/level0");
         }
 
         public void Sair()
@@ -40,6 +45,7 @@ namespace codigo.ui.botao
 
         public void Menu()
         {
+            Debug.Log("menu");
             SceneManager.LoadScene("cena/menu/main_menu");
         }
 

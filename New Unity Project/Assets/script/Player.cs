@@ -47,13 +47,18 @@ namespace Solucao.script
         // Update is called once per frame
         void Update()
         {
+            if (Input.GetKeyDown(KeyCode.Escape))
+            {
+                Mundo.Instancia.Pausar = !Mundo.Instancia.Pausar;
+            }
+            if(Mundo.Instancia.Pausar)
+                return;
             if (!vivo)
             {
                 Cursor.visible = true;
                 Mundo.Instancia.Salva();
                 SceneManager.LoadScene("cena/menu/game_over");
             }
-                
             x = Input.GetAxis("Horizontal");
             y = Input.GetAxis("Vertical");
             mx += Input.GetAxis("Mouse X");
@@ -153,6 +158,7 @@ namespace Solucao.script
                 }
                 case "box":
                 {
+                    Debug.Log("bati numa box");
                     var box = go.GetComponent<LootBox>();
                     box.AoAcionar();
                     Debug.Log("acionando  box para =" + box.efeito);

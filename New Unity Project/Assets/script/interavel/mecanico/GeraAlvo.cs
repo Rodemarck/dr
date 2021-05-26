@@ -1,5 +1,6 @@
 ﻿using System;
 using Solucao.script.interavel.atiravel.tangivel;
+using Solucao.script.interavel.box;
 using UnityEditor;
 using UnityEngine;
 using Solucao.script.ui;
@@ -29,10 +30,12 @@ namespace Solucao.script.interavel.mecanico
             Instantiate(alvo);
         }
 
-        public void Cria(GameObject go)
+        public void Cria(GameObject go, int n = -1)
         {
             var obj = Instantiate(go);
             obj.transform.position = transform.position;
+            if(n != -1)
+                obj.GetComponent<LootBox>().n = n;
             //obj.GetComponent<Zumbi>().geraAlvo = this;
             MudaAlvo(obj);
         }

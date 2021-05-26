@@ -110,6 +110,8 @@ namespace codigo.ui
         private void Start()
         {
             MouseNormal();
+            
+            Pausar = false;
             falas = new Fala[0];
             if(descricao != null)
                 descricao.enabled = false;
@@ -194,6 +196,17 @@ namespace codigo.ui
         #region estatisicas
 
         public Slider sliderInimigo;
+        public GameObject menuPause;
+
+        public bool Pausar
+        {
+            get => menuPause.activeInHierarchy;
+            set
+            {
+                menuPause.SetActive(value);
+                Time.timeScale = value ? 0f : 1f;
+            }
+        }
         public int balasRestantes;
         public int balasDisparadas;
         public int balasAcertadas;
@@ -259,6 +272,7 @@ namespace codigo.ui
             set
             {
                 palyer.arma.GetComponent<Arma>().numeroBala = value;
+                balasRestantes = value;
                 Estatisticas();
             }
         }

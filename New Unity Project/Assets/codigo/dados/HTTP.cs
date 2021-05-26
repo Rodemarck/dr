@@ -34,15 +34,10 @@ namespace codigo.dados
                 urlFinal = dicionario.Aggregate(urlFinal, (current, par) => current + par.Key + '=' + par.Value + '&');
                 urlFinal = urlFinal.Substring(0, urlFinal.Length - 1);
             }
-            Debug.Log("aa");
             using var client = new HttpClient();
-            Debug.Log("bb");
             using var response = await client.GetAsync(urlFinal);
-            Debug.Log("cc");
             using var content = response.Content;
-            Debug.Log("dd");
             var data = await content.ReadAsStringAsync();
-            Debug.Log("ee");
             acao(response.StatusCode, data);
         }
 

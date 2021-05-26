@@ -322,7 +322,7 @@ NavMeshAgent:
   m_Enabled: 1
   m_AgentTypeID: 0
   m_Radius: 0.5
-  m_Speed: 1.25
+  m_Speed: 1
   m_Acceleration: 8
   avoidancePriority: 50
   m_AngularSpeed: 120
@@ -346,13 +346,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bfce3ab15200deb4eadea87001bc20b8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  vidaMax: 110
+  vidaMax: 100
   distanciaMinima: 0.39
   distanciaMax: 15
   alvo: {fileID: 0}
   parar: 0
   timer: 2
-  velocidade: 1.25
+  velocidade: 1
   dano: 5
   sec: 0
   geraAlvo: {fileID: 0}

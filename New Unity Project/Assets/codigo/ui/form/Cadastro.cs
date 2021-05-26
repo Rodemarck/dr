@@ -50,8 +50,8 @@ namespace codigo.ui.form
             var dict = new Dictionary<string, string>();
             dict["login"] = login.text;
             dict["senha"] = senha.text;
-
-            HTTP.get("http://localhost:8080/conta/login", dict, (s, r) =>
+            //http://localhost:8080/conta/login
+            HTTP.get("https://unity-jojogo.herokuapp.com/conta/login", dict, (s, r) =>
             {
                 if (s != HttpStatusCode.OK) return;
                 //PlayerPrefs.SetString("id",JsonConvert.DeserializeObject<BsonDocument>(r).GetElement("login").Value.AsString);
@@ -79,7 +79,7 @@ namespace codigo.ui.form
             
             try
             {
-                HTTP.post("http://localhost:8080/conta/cadastrar", dict, (s, r) =>
+                HTTP.post("https://unity-jojogo.herokuapp.com/conta/cadastrar", dict, (s, r) =>
                 {
                     if (s == HttpStatusCode.OK)
                         SceneManager.LoadScene("cena/menu/login");

@@ -9,16 +9,14 @@ namespace Solucao.script.interavel.box
         private static LootBox _lootBox;
 
         public static LootBox Instancia => _lootBox;
-
+        public static string Efeito =>"aumento na cadencia de disparo";
         private void Awake()
         {
             _lootBox = this;
-            efeito = "aumento na cadencia de disparo";
         }
-        public override void AoAcionar()
+        public static void AoAcionar()
         {
             Mundo.Instancia.Cadencia += Gerenciador.Instancia.cadenciaInicial/3;
-            Destroy(gameObject);
         }
     }
 }

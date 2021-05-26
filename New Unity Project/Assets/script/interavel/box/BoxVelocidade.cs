@@ -8,17 +8,15 @@ namespace Solucao.script.interavel.box
         private static LootBox _lootBox;
 
         public static LootBox Instancia => _lootBox;
-
+        public static string Efeito => "aumento e velocidade";
         private void Awake()
         {
             _lootBox = this;
-            efeito = "aumento e velocidade";
         }
-        public override void AoAcionar()
+        public static void AoAcionar()
         {
             
             Mundo.Instancia.palyer.velocidade += 1f;
-            Destroy(gameObject);
         }
     }
 }

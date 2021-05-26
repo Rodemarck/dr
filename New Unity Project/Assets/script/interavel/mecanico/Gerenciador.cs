@@ -32,7 +32,7 @@ namespace Solucao.script.interavel.mecanico
         public float velocidade;
         public float danoZumbi;
         public float vida;
-        private Random rng = new Random();
+        public Random rng = new Random();
         
         private void Awake()
         {
@@ -70,17 +70,15 @@ namespace Solucao.script.interavel.mecanico
         public void Kill()
         {
             Mundo.Instancia.Abate();
-            LimpaLoot(loot);
-            LootBox(loot);
-            Proximo.Cria(loot);
+            LootBox();
+            if(rng.Next(10) > 2)
+                LootBox(3);
             ++numero;
             if(numero>=quantidade)
                 ProximoLevel();
         }
 
-        public void LimpaLoot(GameObject go)
-        {
-        }
+        
 
         private void gerar()
         {
@@ -93,9 +91,11 @@ namespace Solucao.script.interavel.mecanico
 
         private GeraAlvo Proximo => geradores[rng.Next(geradores.Length)];
 
-        public void LootBox(GameObject go)
+        public void LootBox(int n = -1)
         {
-            
+            if (n == -1)
+                n = rng.Next(5);
+            Proximo.Cria(loot,n);
         }
         private void AtualizaGeradores()
         {

@@ -9,16 +9,15 @@ namespace Solucao.script.interavel.box
         private static LootBox _lootBox;
 
         public static LootBox Instancia => _lootBox;
-
+        public static string Efeito => "aumento de vida máxima";
         private void Awake()
         {
             _lootBox = this;
-            efeito = "aumento de vida máxima";
+            
         }
-        public override void AoAcionar()
+        public static void AoAcionar()
         {
             Mundo.Instancia.palyer.VidaMax += Gerenciador.Instancia.cura;
-            Destroy(gameObject);
         }
 
        
